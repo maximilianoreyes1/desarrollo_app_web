@@ -1,7 +1,4 @@
-*{
-    outline: solid black 1px;
-}
-
+/* Estilos generales del cuerpo */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -14,6 +11,7 @@ body {
     background-color: #f4f4f4;
 }
 
+/* Contenedor principal */
 .father-container {
     display: flex;
     width: 100vw;
@@ -22,6 +20,7 @@ body {
     overflow: hidden;
 }
 
+/* Sección izquierda (formulario de inicio de sesión) */
 .container {
     width: 50%;
     display: flex;
@@ -30,12 +29,14 @@ body {
     align-items: center;
 }
 
+/* Navegación (logo de Consalud) */
 .nav{
     display: flex;
     justify-content: flex-start;
     width: 90%;
 }
 
+/* Sección derecha (información sobre Consalud Mobile) */
 .container2 {
     width: 50%;
     height: 100vh;
@@ -52,10 +53,12 @@ body {
     color: #fff;
 }
 
+/* Márgenes para los elementos dentro de container2 */
 .container2 p, .container2 h2, .container2 button{
     margin: 30px 50px 0px;
 }
 
+/* Ajuste de ancho para los párrafos y botones dentro de container2 */
 .container2 p{
     width: 60%;
 }
@@ -64,22 +67,27 @@ body {
     width: 40%;
 }
 
+/* Espaciado superior en la sección de elementos informativos */
 .cont-elem{
     margin-top: 20%;
 }
 
+/* Estilos del logo */
 .logo {
     width: 150px;
 }
 
+/* Estilos de los títulos */
 h2 {
     color: #333;
 }
 
+/* Resaltar palabras clave */
 .highlight {
     color: #00b8b0;
 }
 
+/* Estilos del formulario */
 form {
     display: flex;
     flex-direction: column;
@@ -87,6 +95,7 @@ form {
     max-width: 300px;
 }
 
+/* Estilos de los campos de entrada */
 input {
     width: 100%;
     padding: 10px;
@@ -95,12 +104,14 @@ input {
     border-radius: 50px;
 }
 
+/* Enlace para recuperar la contraseña */
 .forgot {
     text-align: center;
     text-decoration: none;
     font-size: 14px;
 }
 
+/* Botón principal */
 .btn {
     background: #00b8b0;
     color: white;
@@ -113,6 +124,7 @@ input {
     max-width: 300px;
 }
 
+/* Botón secundario (ingresar con huella) */
 .btn-secondary {
     background: none;
     color: #00b8b0;
@@ -125,6 +137,7 @@ input {
     max-width: 300px;
 }
 
+/* Botón informativo (cómo instalar la app) */
 .btn-info {
     background: white;
     color: #00b8b0;
@@ -135,6 +148,7 @@ input {
     margin-top: 10px;
 }
 
+/* Enlace para volver a la página principal */
 .back {
     display: block;
     margin-top: 20px;
