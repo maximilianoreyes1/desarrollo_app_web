@@ -1,11 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Consalud</title>
 </head>
 <body>
-    
+    <div class="father-container">
+        <div class="container">
+            <div class="nav">
+                <img src="img/Anotación 2025-03-03 143255.png" class="logo">
+            </div>
+            <h2>Ingresa a tu <span class="highlight">Consalud</span></h2>
+            <p>¡Haz tus trámites más simples!</p>
+            <form>
+                <label for="rut">RUT</label>
+                <input type="text" id="rut" placeholder="12.345.678-9">
+                
+                <label for="clave">Clave</label>
+                <input type="password" id="clave" placeholder="******">
+                
+                <a href="#" class="forgot">¿Olvidaste tu clave?</a>
+                
+                <button type="submit" class="btn">Ingresar</button>
+                <button type="button" class="btn-secondary">Ingresar con huella</button>
+            </form>
+            <a href="#" class="back">&#8592; Volver a Consalud.cl</a>
+        </div>
+        <div class="container2">
+            <h2>¡Bienvenido a tu Sucursal Digital!</h2>
+            <p><strong>Instala Consalud Mobile en tu teléfono</strong> y realiza tus trámites de forma simple, rápida y segura.</p>
+            <button type="button" class="btn-info">¿Cómo instalar Consalud Mobile?</button>
+        </div>
+    </div>
 </body>
 </html>
