@@ -36,6 +36,12 @@ body {
     width: 90%;
 }
 
+.text1{
+    margin-right: 50px;
+    align-items: left;
+    text-align: left;
+}
+
 /* Sección derecha (información sobre Consalud Mobile) */
 .container2 {
     width: 50%;
@@ -47,6 +53,56 @@ body {
     justify-content: center;
     align-items: left;
     text-align: left;
+}
+
+.img1, .img3{
+    width: 130px;
+    height: 130px;
+}
+
+.img2 {
+    width: 150px;
+    height: 150px;
+    display: flex; /* Asegura que los elementos se alineen con Flexbox */
+    flex-direction: column; /* Apila la imagen y el texto en columna */
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    background-color: #fff;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.img2 img {
+    display: block;
+    height: auto;
+}
+
+.img-text {
+    margin: 0; /* Elimina márgenes que podrían separar el texto */
+    padding: 0; /* Elimina cualquier relleno */
+    font-size: 15px;
+    color: #333;
+    line-height: 1; /* Reduce el espacio extra entre líneas */
+}
+
+.img1, .img2, .img3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.cont-img{
+    display: flex;
+    justify-content: end;
+    margin-right: 170px;
+}
+
+.cont-img2{
+    display: flex;
+    justify-content: start;
+    margin-left: 170px;
 }
 
 .container2 h2{
@@ -67,9 +123,8 @@ body {
     width: 40%;
 }
 
-/* Espaciado superior en la sección de elementos informativos */
 .cont-elem{
-    margin-top: 20%;
+    margin-bottom: 50px;
 }
 
 /* Estilos del logo */
@@ -84,7 +139,7 @@ h2 {
 
 /* Resaltar palabras clave */
 .highlight {
-    color: #00b8b0;
+    color: #00CBBF;
 }
 
 /* Estilos del formulario */
@@ -113,7 +168,7 @@ input {
 
 /* Botón principal */
 .btn {
-    background: #00b8b0;
+    background: #00CBBF;
     color: white;
     border: none;
     padding: 10px;
@@ -127,8 +182,8 @@ input {
 /* Botón secundario (ingresar con huella) */
 .btn-secondary {
     background: none;
-    color: #00b8b0;
-    border: 2px solid #00b8b0;
+    color: #00CBBF;
+    border: 2px solid #00CBBF;
     padding: 10px;
     margin-top: 10px;
     border-radius: 50px;
@@ -140,7 +195,7 @@ input {
 /* Botón informativo (cómo instalar la app) */
 .btn-info {
     background: white;
-    color: #00b8b0;
+    color: #00CBBF;
     border: none;
     padding: 10px;
     border-radius: 50px;
@@ -150,9 +205,14 @@ input {
 
 /* Enlace para volver a la página principal */
 .back {
+    margin-right:400px ;
     display: block;
-    margin-top: 20px;
+    margin-top: 130px;
     text-decoration: none;
-    color: #00b8b0;
+    color: #4e4e4e;
     font-size: 14px;
+}
+
+.sp{
+    color:#00CBBF ;
 }
