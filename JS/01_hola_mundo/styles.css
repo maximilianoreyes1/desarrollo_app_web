@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background-color: cornflowerblue;
+    padding: 10px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+}
+
+li{
+    margin: 0 15px;
+}
+
+a{
+text-decoration: none;
+color: white;
+cursor: pointer;
+font-weight: bold;
+}
+
+a:hover{
+    color: rgba(9, 66, 255, 0.415);
+}
+
+button{
+    margin: 50px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: brown;
+}
