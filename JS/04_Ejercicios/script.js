@@ -28,10 +28,11 @@ function realizarOperaciones() {
     let num1 = parseInt(prompt("Ingrese el primer número: "));
     let num2 = parseInt(prompt("Ingrese un segundo número: "));
     let num3 = parseInt(prompt("Ingrese un tercer número: "));
-    let operacion1 = num1 - num3
-    let operacion2 = num2 * num3
-    let operacion3 = num1 / 120
-    alert("Número 1: " + num1 + "\nNúmero 2: " + num2 + "\nNúmero 3: " + num3 + "\nOperación1: " + operacion1 + "\nOperación 2: " + operacion2 + "\nOperación 3: " + operacion3);
+    let operacion1 = num1 + num2 + num3
+    let operacion2 = num1 - num3
+    let operacion3 = num2 * num3
+    let operacion4 = num1 / 120
+    alert("Operación1: " + operacion1 + "\nOperación 2: " + operacion2 + "\nOperación 3: " + operacion3 + "\nOperacion 4: " + operacion4);
 }
 
 // Ejercicio 4: Manipulación de cadenas
@@ -41,6 +42,6 @@ function manipularCadenas() {
 // Tu código aquí
 let direccion = prompt("Ingrese dirección:")
 let n_casa = parseInt(prompt("Ingrese número de casa:"));
-let mensaje = "Dirección: " + direccion + "\nNúmero de casa: " + n_casa
-alert(mensaje + "\n" + "Longitud del mensaje: " + mensaje.length)
+let mensaje = "Dirección: " + direccion + "\nNúmero de casa: " + n_casa + "\nCaracter antepenúltimo: "
+alert(mensaje + "\n" + "Longitud del mensaje: " + mensaje.length);
 }
