@@ -1,0 +1,45 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+    margin: 20px;
+}
+
+/* Título principal */
+h1 {
+    color: #2c3e50;
+    background-color: #ecf0f1;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+/* Párrafos de descripción */
+p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Botones */
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Contenedor de los ejercicios */
+div {
+    margin: 20px 0;
+    padding: 10px;
+}
