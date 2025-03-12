@@ -5,8 +5,8 @@ console.log("Vinculado correctamente...")
 
 function declararVariables() {
     // Tu código aquí
-    let ahora = 2025;
-    let fecha_nac = 2008;
+    let ahora = parseInt(prompt("Ingrese año actual: "));
+    let fecha_nac = parseInt(prompt("Ingrese año de nacimiento: "));
     resultado = ahora - fecha_nac;
     alert("Edad: " + resultado);
     }
@@ -14,8 +14,8 @@ function declararVariables() {
 // Instrucciones: Completa la función para asignar el valor de 'var1' a 'var2' y luego muestra el valor de 'var2'.
 function asignarValores() {
 // Tu código aquí
-    let var1 = 10
-    let var2 = var1
+    let var1 = parseInt(prompt("Ingrese un número: "));
+    let var2 = var1;
     alert("El valor de var2 es el mismo que var1 \n" + "var1: " + var1 + "\nvar2: " + var2);
 }
     
@@ -25,9 +25,9 @@ function asignarValores() {
 // Muestra los resultados en un mensaje.
 function realizarOperaciones() {
 // Tu código aquí
-    let num1 = 240
-    let num2 = 20
-    let num3 = 30
+    let num1 = parseInt(prompt("Ingrese el primer número: "));
+    let num2 = parseInt(prompt("Ingrese un segundo número: "));
+    let num3 = parseInt(prompt("Ingrese un tercer número: "));
     let operacion1 = num1 - num3
     let operacion2 = num2 * num3
     let operacion3 = num1 / 120
@@ -39,8 +39,8 @@ function realizarOperaciones() {
 // Luego, muestra la longitud del mensaje y el antepenultimo en el mensaje. (.length)
 function manipularCadenas() {
 // Tu código aquí
-let direccion = "Av. Santa Rosa."
-let n_casa = 7890
+let direccion = prompt("Ingrese dirección:")
+let n_casa = parseInt(prompt("Ingrese número de casa:"));
 let mensaje = "Dirección: " + direccion + "\nNúmero de casa: " + n_casa
 alert(mensaje + "\n" + "Longitud del mensaje: " + mensaje.length)
 }
