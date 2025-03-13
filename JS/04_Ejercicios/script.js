@@ -42,6 +42,6 @@ function manipularCadenas() {
 // Tu código aquí
 let direccion = prompt("Ingrese dirección:")
 let n_casa = parseInt(prompt("Ingrese número de casa:"));
-let mensaje = "Dirección: " + direccion + "\nNúmero de casa: " + n_casa + "\nCaracter antepenúltimo: "
-alert(mensaje + "\n" + "Longitud del mensaje: " + mensaje.length);
+let mensaje = "Dirección: " + direccion + "\nNúmero de casa: " + n_casa;
+alert(mensaje + "\n" + "Longitud del mensaje: " + mensaje.length + "\n" + "Antepenúltimo caracter: " + mensaje[mensaje.length - 3]);
 }
