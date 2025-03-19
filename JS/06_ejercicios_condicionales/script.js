@@ -19,3 +19,25 @@ function user_password(){
         alert("Acceso denegado")
     }
 }
+
+function val_num(){
+    let numero = prompt("ingrese un número:")
+    if (numero <= -1){
+        alert("Número negativo")
+    } else if(numero == 0){
+        alert("El número es cero")
+    } else {
+        alert("El número es positivo")
+    }
+}
+
+function calc_punt(){
+    let puntuacion = prompt("Ingrese puntuación")
+    if (puntuacion >= 90){
+        alert("Excelente")
+    } else if(puntuacion >= 70 && puntuacion <= 89){
+        alert("Buen trabajo")
+    } else {
+        alert("Nesecitas mejorar")
+    }
+}
