@@ -1,19 +1,23 @@
 function imprimirNum(){
     let numero = 1;
+    array = []
 
     while (numero <=5){
-        alert(numero);
+        array.push(numero)
         numero++;
     }
+    alert(`los números son: ${array.join(" - ")}`)
 }
 
 function imprimirNumN(){
     let contador = 10;
+    let array = []
 
     while (contador >=1){
-        alert(contador);
+        array.push(contador);
         contador--;
     }
+    alert(`los números son: ${array.join(" - ")}`)
 }
 
 function sumarNum(){
