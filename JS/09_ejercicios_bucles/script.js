@@ -1,27 +1,27 @@
 function imprimirNum(){
-    let num = 1;
+    let numero = 1;
 
-    while (num <=5){
-        alert(num);
-        num++;
+    while (numero <=5){
+        alert(numero);
+        numero++;
     }
 }
 
 function imprimirNumN(){
-    let num = 10;
+    let contador = 10;
 
-    while (num >=1){
-        alert(num);
-        num--;
+    while (contador >=1){
+        alert(contador);
+        contador--;
     }
 }
 
 function sumarNum(){
-    let suma = 0
+    let sumar = 0
     for(let i = 1; i <= 5; i++){
-        suma += i;
+        sumar += i;
     }
-    alert("Esta es la suma de los primeros 5 números" + suma)
+    alert("Suma de los primeros 5 números" + sumar)
 }
 
 function imprimirMul(){
