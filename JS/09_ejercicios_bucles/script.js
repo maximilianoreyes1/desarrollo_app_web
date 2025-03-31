@@ -1,35 +1,43 @@
 function imprimirNum(){
-    let numero = 1;
-    array = []
+    let n = parseInt(prompt("Ingrese un número:"));
+    let count = 1
+    let array = []
 
-    while (numero <=5){
-        array.push(numero)
-        numero++;
+    while (count <= n){
+        array.push(count)
+        count++;
     }
     alert(`los números son: ${array.join(" - ")}`)
 }
 
 function imprimirNumN(){
-    let contador = 10;
+    let n = parseInt(prompt("Ingrese un número:"))
+    let contador = 1;
     let array = []
 
-    while (contador >=1){
-        array.push(contador);
-        contador--;
+    while (n >= contador){
+        array.push(n);
+        n--;
     }
     alert(`los números son: ${array.join(" - ")}`)
 }
 
 function sumarNum(){
-    let sumar = 0
-    for(let i = 1; i <= 5; i++){
+    let sumar = 0;
+    let cantidad = parseInt(prompt("Ingresa la cantidad de números a sumar:"));
+    
+    for(let i = 1; i <= cantidad; i++){
         sumar += i;
     }
-    alert("Suma de los primeros 5 números" + sumar)
+    alert("Suma de los" + " primeros números: " + sumar);
 }
 
 function imprimirMul(){
-    for (let i = 2; i <= 10; i += 2) {
-        alert(i);
-    }    
+    let limite = parseInt(prompt("Ingresa el límite de números a encontrar:"));
+    let array = []
+
+    for (let i = 2; i <= limite; i += 2) {
+        array.push(i);
+    }
+    alert(`Los multiplos son: ${array.join(" - ")}`)
 }
