@@ -2,7 +2,7 @@ function sumar_n(){
     let n = parseInt(prompt("Ingrese un número:"));
     let fin = parseInt(prompt("ingresa el número final"));
     let pares = [];
-    let cantidad = parseInt(prompt(""))
+    let cantidad = parseInt(prompt("cantidad de numeros pares"))
     
     for(i = 0; i < n; i++){
         if ( i % 2 === 0) {
