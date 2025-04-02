@@ -1,33 +1,15 @@
-function sumar_n(){
-    let n = parseInt(prompt("Ingrese un número:"));
-    let fin = parseInt(prompt("ingresa el número final"));
-    let pares = [];
-    let cantidad = parseInt(prompt("cantidad de numeros pares"))
+function sumarN(){
+    let n = parseInt(prompt("Ingresa la cantidad de números pares a sumar:")); //solicita que se ingrese una cantidad de números pares
+    let suma = 0; //inicializa la variable suma
+    let count = 0; //inicializa la variable count
+    let numeroPar = 2; //inicializa la variable numero
+    let array = [] // lista donde se guardaran los números pares
     
-    for(i = 0; i < n; i++){
-        if ( i % 2 === 0) {
-            pares.push(i);
-            if (pares.length === cantidad) break;
-        }
+    while (count < n) { //bucle para que el count llegue a la canridad de números ingresados por el usaurio
+        suma += numeroPar; //el suma el valor del numero par
+        numeroPar += 2; //aumenta el numero par en 2
+        count++; //aumenta la cuenta en 1
+        array.push(numeroPar - 2); //guarda el valor de los números pares
     }
-
-
-
-    alert("")
-}
-
-function sumar_n2(){
-    let n = parseInt(prompt("Ingresa la cantidad de números pares a sumar:"));
-    let suma = 0;
-    let contador = 0;
-    let numero = 2;
-
-    while (contador < n) {
-        for (let i = 0; i < 1; i++) {
-            suma += numero;
-            numero += 2;
-            contador++;
-        }
-    }
-    alert("La suma de los " + n + " primeros números pares es: " + suma);
+    alert("La suma de los " + n + " primeros números pares es: " + suma + `\nLista de números pares: ${array.join(", ")}`);
 }
