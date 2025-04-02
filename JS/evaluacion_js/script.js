@@ -31,5 +31,3 @@ function sumar_n2(){
     }
     alert("La suma de los " + n + " primeros números pares es: " + suma);
 }
-
-    
