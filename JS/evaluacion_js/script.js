@@ -17,15 +17,19 @@ function sumar_n(){
 }
 
 function sumar_n2(){
-    let n = parseInt(prompt("Ingrese un número:"));
-    let fin = parseInt(prompt("ingresa el número final"));
-    let pares = [];
-    
-    for(i = 0; i < n; i++){
-        if ( i % 2 === 0) {
-            pares.push(I)
+    let n = parseInt(prompt("Ingresa la cantidad de números pares a sumar:"));
+    let suma = 0;
+    let contador = 0;
+    let numero = 2;
+
+    while (contador < n) {
+        for (let i = 0; i < 1; i++) {
+            suma += numero;
+            numero += 2;
+            contador++;
         }
     }
-    alert(`Números pares encontrados: ${pares.join(', ')}\nSuma total: ${suma}`);
+    alert("La suma de los " + n + " primeros números pares es: " + suma);
 }
+
     
