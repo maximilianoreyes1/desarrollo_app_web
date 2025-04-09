@@ -63,7 +63,7 @@ function operacionesVarias(){
     let numero1 = parseInt(prompt("Ingrese el primer número:"))
     let numero2 = parseInt(prompt("Ingrese el segundo número:"))
     let operacion = prompt("Que operación quiere hacer, +, -, *, /")
-    resultado = 0;
+    let resultado = 0;
 
     if(operacion == "+"){
         resultado = numero1 + numero2;
@@ -73,5 +73,74 @@ function operacionesVarias(){
         resultado = numero1 * numero2
     } else if(operacion == "/") {
         resultado = numero1 / numero2
+    } else {
+        alert("Ingrese una operación valida")
     }
+    alert(`Este es el resultado de su operación ${resultado}`)
+}
+
+function sumarNumerosPares(){
+    let count = parseInt(prompt("Ingrese cantidad de números pares que quiere sumar"))
+    let suma = 0;
+
+    for(i = 1; i <= count; i++){
+        let n = parseInt(prompt(`Ingrese el número par número ${i}`))
+        if(n % 2 !== 0){
+            alert("Ese no es un número par");
+            i--;
+        } else {
+            suma += n;
+        }
+    }
+    alert(`La suma de los números es: ${suma}`)
+}
+
+function sumarPrimerosNumPares(){
+    let n = parseInt(prompt("Ingresa la cantidad de números pares a sumar:")); //solicita que se ingrese una cantidad de números pares
+    let suma = 0; //inicializa la variable suma
+    let count = 0; //inicializa la variable count
+    let numeroPar = 2; //inicializa la variable numero
+    let array = [] // lista donde se guardaran los números pares
+    
+    while (count < n) {
+        suma += numeroPar;
+        array.push(numeroPar);
+        numeroPar += 2;
+        count++;
+        
+    }
+    alert("La suma de los " + n + " primeros números pares es: " + suma + `\nLista de números pares: ${array.join(", ")}`);
+}
+
+function sumarNumerosImpares(){
+    let count = parseInt(prompt("Ingrese cantidad de números impares que quiere sumar"))
+    let suma = 0;
+
+    for(i = 1; i <= count; i++){
+        let n = parseInt(prompt(`Ingrese el número impar número ${i}`))
+        if(n % 2 !== 1){
+            alert("Ese no es un número impar");
+            i--;
+        } else {
+            suma += n;
+        }
+    }
+    alert(`La suma de los números es: ${suma}`)
+}
+
+function sumarPrimerosNumImpares(){
+    let n = parseInt(prompt("Ingresa la cantidad de números pares a sumar:")); //solicita que se ingrese una cantidad de números pares
+    let suma = 0; //inicializa la variable suma
+    let count = 0; //inicializa la variable count
+    let numeroSuma = 1; //inicializa la variable numero
+    let array = [] // lista donde se guardaran los números pares
+    
+    while (count < n) {
+        suma += numeroSuma;
+        array.push(numeroSuma);
+        numeroSuma += 2;
+        count++;
+        
+    }
+    alert("La suma de los " + n + " primeros números impares es: " + suma + `\nLista de números impares: ${array.join(", ")}`);
 }
