@@ -140,7 +140,23 @@ function sumarPrimerosNumImpares(){
         array.push(numeroSuma);
         numeroSuma += 2;
         count++;
-        
     }
-    alert("La suma de los " + n + " primeros números impares es: " + suma + `\nLista de números impares: ${array.join(", ")}`);
+    alert(`La suma de los ${n} primeros números impares es: ${suma} \nLista de números impares: ${array.join(", ")}`);
 }
+
+function sumarMultiplosTres(){
+    let n = parseInt(prompt("Ingresa la cantidad de números pares a sumar:")); //solicita que se ingrese una cantidad de números pares
+    let suma = 0; //inicializa la variable suma
+    let count = 0; //inicializa la variable count
+    let numeroMul = 3
+    let array = []
+
+    while(count < n) {
+        suma += numeroMul;
+        array.push(numeroMul);
+        numeroMul += 3;
+        count++;
+    }
+    alert(`La suma de los ${n} multiplos de 3 es: ${suma} \nLista de multiplos de 3: ${array.join(", ")}`)
+}
+
