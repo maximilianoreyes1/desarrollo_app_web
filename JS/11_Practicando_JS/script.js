@@ -160,3 +160,16 @@ function sumarMultiplosTres(){
     alert(`La suma de los ${n} multiplos de 3 es: ${suma} \nLista de multiplos de 3: ${array.join(", ")}`)
 }
 
+function calcularFactorial() {
+    let n = parseInt(prompt("Ingresa el número para calcular el factorial:"));
+    let resultado = 1;
+    while (n > 1) {
+        resultado *= n;
+        n--;
+    }
+    alert(`El factorial de ${n} es: ${resultado}`);
+}
+
+function gradosCelciusFahrenheit(){
+    
+}
