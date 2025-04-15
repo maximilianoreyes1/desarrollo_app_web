@@ -170,6 +170,22 @@ function calcularFactorial() {
     alert(`El factorial de ${n} es: ${resultado}`);
 }
 
-function gradosCelciusFahrenheit(){
-    
+function gradosCelsiusFahrenheit(){
+    let gradosC = parseInt(prompt("Ingrese grados celsius:"));
+    let gradosF = (gradosC * 9/5) + 32;
+
+    alert(`Los grados Fahrenheit son: ${gradosF}`);
+}
+
+function palabra_larga(){
+    let frase = prompt("Ingrese una frase:");
+    let palabras = frase.split(" ");
+    let palabraLarga = "";
+
+    for (let i = 0; i < palabras.length; i++){
+        if(palabras[i].length > palabraLarga.length){
+            palabraLarga = palabras[i]
+        }
+    }
+    alert(`La palabra más larga de la frase es: ${palabraLarga}`)
 }
