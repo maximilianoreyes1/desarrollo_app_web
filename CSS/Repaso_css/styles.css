@@ -1,0 +1,14 @@
+*{
+    outline: solid black 1px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
