@@ -1,14 +1,50 @@
 *{
+    margin: 0;
+    padding: 0;
     outline: solid black 1px;
 }
 
-*{
-    margin: 0;
-    padding: 0;
+main{
+    margin: 10px;
 }
 
-nav{
-    margin: 20px;
+nav {
+    color: #fff;
+    background-color: #2C3E50;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+  
+.nav1 {
+    flex: 2;
+}
+
+.nav1 h2{
+    font-size: 50px;
+}
+
+.nav2 {
+    flex: 1;
+    margin-left: 40px;
+}
+  
+ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+ul button{
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    background: none;
+    padding: 7px;
+}
+
+.cerrar_sesion{
+    background: #3798DC;
+    border-radius: 5px;
 }
