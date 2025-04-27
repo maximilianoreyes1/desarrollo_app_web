@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    outline: solid black 1px;
+    /*outline: solid black 1px;*/
 }
 
 main{
@@ -51,20 +51,76 @@ ul button{
 }
 
 .header{
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
     width: 100%;
-    height: 50px;
+    height: 100px;
     background-color: #3798DC;
 }
 
 .father_container{
+    gap: 70px;
+    background-color: #EDF0F2;
     margin-top: 10px;
-    display:flex;
-    justify-content: space-around;
+    display: flex;
+    align-items: start;
+}
+
+.container_1 a{
+    color: #3798DC;
+}
+
+.container_1{
+    background-color: #fff;
+    border-radius: 15px;
+    flex: 2;
+    text-align: center;
+    height: 300px;
+}
+
+.user-photo {
+    width: 100px;
+    margin-top: -7%; 
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.container_2{
+    flex: 1;
+}
+
+.container_1, .container_2{
+    margin: 20px;
+}
+
+.sub_cont{
+    margin-top: 10px;
+    border-radius: 30px;
+    padding: 20px;
+    background-color: #fff;
 }
 
 .header_sc{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.header_sc h2{
+    padding-right: 20px;
+    font-size: 18px;
+}
+
+.header_sc button{
+    background-color: #fff;
+    padding: 5px;
+    border-color: #48A1DF;
+    color: #48A1DF;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .cont_sc{
@@ -73,15 +129,23 @@ ul button{
     flex-direction: column;
 }
 
+.user_rq {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
 .user_rq img{
     width: 40px;
 }
 
 .users_r{
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    gap: 10px;
+    padding: 8px;
 }
 
-.users_r img, .users_r a{
+.users_r a {
+    flex: 1;
 }
