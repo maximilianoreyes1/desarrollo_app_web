@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    /*outline: solid black 1px;*/
+}
+
+main{
+    margin: 10px;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+header{
+    text-align: center;
+    margin: 10px;
+}
+
+.father{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px;
+    padding: 15px;
+}
+
+#sky_blue{
+    background-color: #5BC7D7;
+}
+
+#pink{
+    background-color: #D3A1AA;
+}
+
+#white{
+    background-color: #FCFCFF;
+}
+
+#blue{
+    background-color: blue;
+}
+
+#red{
+    background-color: red;
+}
+
+#green{
+    background-color: #5D6532;
+}
+
+main img{
+    height: 150px;
+    width: 150px;
+}

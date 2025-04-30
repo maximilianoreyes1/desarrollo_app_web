@@ -59,11 +59,10 @@ ul button{
 }
 
 .father_container{
-    gap: 70px;
     background-color: #EDF0F2;
     margin-top: 10px;
     display: flex;
-    align-items: start;
+    flex-wrap: wrap;
 }
 
 .container_1 a{
@@ -73,7 +72,7 @@ ul button{
 .container_1{
     background-color: #fff;
     border-radius: 15px;
-    flex: 2;
+    flex: 1 1 300px;
     text-align: center;
     height: 300px;
 }
@@ -91,7 +90,7 @@ ul button{
 }
 
 .container_1, .container_2{
-    margin: 20px;
+    margin: 35px;
 }
 
 .sub_cont{
@@ -133,7 +132,7 @@ ul button{
     display: flex;
     flex-direction: column;
     gap: 10px;
-  }
+}
 
 .user_rq img{
     width: 40px;
