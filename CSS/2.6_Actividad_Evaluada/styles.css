@@ -1,10 +1,18 @@
+
+/*elementos que afectan a toda la pagina*/
 *{
-    outline: solid black 1px;
+    /*outline: solid black 1px;*/
     padding: 0;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/*elementos del body*/
+body{
+    background-color: #FDF6EC;
+}
+
+/*barra de navegación*/
 nav{
     padding: 30px;
     display: flex;
@@ -16,47 +24,62 @@ nav{
     gap: 20px;
 }
 
+/*titulo del nav*/
 nav h1{
     font-size: 32px;
 }
 
+/*contenedor main*/
 main{
-    margin-top: 20px;
     display: flex;
     justify-content: center;
     height: 100%;
-    background-color: #FDF6EC;
 }
 
+/*contenedor principal de la pagina*/
 .father_container{
+    flex-wrap: wrap;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 40px;
+    background-color: #fff;
     display: flex;
     justify-content: center;
     flex-direction: column;
     gap: 15px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.25);
 }
 
+/*sub_contenedores*/
 .sub_cont1, .sub_cont2{
     text-align: center;
 }
 
+/*contenedor hijo del sub contenedor 1*/
 .sub_cont1 div{
     background-color: #E67E22;
 }
 
+/*elementos dle sub contenedor 2*/
 .sub_cont2{
+    flex-wrap: wrap;
     display: flex;
     justify-content: center;
     gap: 20px;
 }
 
+/*contenedor hijo del subcontenedor 2*/
 .sub_cont2 div{
     background-color: #D35400;
 }
 
+/*contenedores hijos*/
 .cont_hijo{
-    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 30px 50px 30px;
     border-radius: 10px;
     color: #fff;
     flex: 1;
-    gap: 10px;
+    gap: 20px;
 }
