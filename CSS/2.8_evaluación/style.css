@@ -19,9 +19,11 @@ body {
 .nav {
     background-color: #37474f;
     color: white;
-    width: 240px;
+    width: 20%;
     height: 100vh;
     position: fixed;
+    min-width: 180px;  /* evita que se haga muy pequeño */
+    max-width: 280px;  /* evita que se haga muy grande */
     top: 0;
     left: 0;
     padding: 20px;
@@ -49,13 +51,23 @@ body {
     color: #ffd54f;
 }
 
-/* CONTENIDO A LA DERECHA DEL NAV */
+.area-principal {
+    margin-left: 200px;
+    flex: 1;
+    padding: 40px 0px;
+    display: flex;
+    justify-content: center;
+}
+
 .contenido {
+    width: 100%;
+    max-width: 800px;
+}
+
+.galeria{
     display: flex;
     flex-direction: column;
-    width: 100%; /* que ocupe todo el ancho disponible */
-    margin-left: 240px; /* espacio igual al ancho del nav */
-    padding: 30px;
+    gap: 20px;
 }
 
 .sub-galeria {
@@ -65,16 +77,11 @@ body {
     margin: 25px 50px;
 }
 
-.c_flex {
-    padding: 20px;
-    width: 100%;
+.celtics{
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.verde {
     background-color: #058C54;
+    align-items: center;
+    justify-content: center;
     flex-direction: row-reverse;
 }
 
@@ -83,23 +90,10 @@ body {
 }
 
 .datos_equipos1 {
-    display: flex;
     flex-wrap: wrap;
     gap: 10px;
 }
 
-.cont7 {
-    flex: 1;
-}
-
-.cont8 {
-    flex: 5;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-/* TARJETAS */
 .tarjeta {
     flex: 1 1 250px;
     min-width: 250px;
@@ -111,55 +105,11 @@ body {
     transition: transform 0.3s ease;
 }
 
-.tarjeta:hover {
+.tarjeta:hover{
     transform: scale(1.05);
 }
 
-.tarjeta img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-/* Proporciones */
-.grande {
-    flex: 1;
-    background-color: #080808;
-}
-
-.pequeña {
-    flex: 4;
-    background-color: #E15A17;
-}
-
-.f {
-    background-color: #241F21;
-}
-
-.f2 {
-    background-color: #fff;
-}
-
-.img1 {
-    width: 170px;
-    height: 170px;
-}
-
-.img2 {
-    width: 320px;
-    height: 180px;
-    border-radius: 10%;
-}
-
-.img3 {
-    width: 120px;
-    height: 180px;
-    border-radius: 10%;
-}
-
-.imgb1 {
-    width: 170px;
-    height: 170px;
-    border-radius: 10%;
+img{
+    width: 100px;
+    height: 100px;
 }
