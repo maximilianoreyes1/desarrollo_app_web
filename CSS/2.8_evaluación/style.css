@@ -70,6 +70,10 @@ body {
     gap: 20px;
 }
 
+h1{
+    flex: 1;
+}
+
 .sub-galeria {
     padding: 25px;
     display: flex;
@@ -93,16 +97,20 @@ body {
 
 .cont2 {
     flex-direction: column;
+    display: flex;
+    width: 100%;
+    flex: 1;
 }
-
 .datos_equipos1 {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
 }
 
 .tarjeta {
-    flex: 1 1 250px;
-    min-width: 250px;
+    flex: 1 1 100px;
+    min-width: 90px;
     padding: 35px;
     border-radius: 10px;
     background-color: #fff;
