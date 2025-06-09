@@ -78,9 +78,10 @@ body {
     margin: 25px 50px;
 }
 
-.datos_equipos1, .datos_equipos2{
+.c_flex{
+    flex-direction: column;
     display: flex;
-    gap: 20px;
+    gap: 10px;
 }
 
 .celtics{
@@ -88,7 +89,6 @@ body {
     background-color: #058C54;
     align-items: center;
     justify-content: center;
-    flex-direction: row-reverse;
 }
 
 .cont2 {
@@ -96,8 +96,8 @@ body {
 }
 
 .datos_equipos1 {
-    flex-wrap: wrap;
-    gap: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 .tarjeta {
