@@ -15,21 +15,5 @@ main {
 main p {
     font-size: 18px;
     color: #333;
-    margin-bottom: 20px;
-}
-
-/* Estilo para el botón */
-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-/* Cambio de color al pasar el mouse sobre el botón */
-button:hover {
-    background-color: #45a049;
+    margin: 10px 0 7px 0;
 }
