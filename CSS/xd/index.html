@@ -1,76 +1,86 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sitio Temático Flex</title>
-    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <div class="contenedor">
-        <nav class="nav">
-            <h2>🌍 Explorador</h2>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Galería</a></li>
-                <li><a href="#">Favoritos</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-        </nav>
-        <main class="area-principal">
-            <div class="contenido">
-                <div class="galeria">
-                    <h1> 🏀 Galería de Campeones basket</h1>
-                    <div class="sub-galeria celtics">
-                        <div class="c_flex cont1">
-                            <div class="tarjeta"><img class="imgb1" src="img/Boston_Celtics.png" alt=""></div>
-                        </div>
-                        <div class="c_flex cont2">
-                            <div class="datos_equipos1">
-                                <div class="tarjeta">Curiosidad 1</div>
-                                <div class="tarjeta">Curiosidad 2</div>
-                            </div>
-                            <div class="datos_equipos2">
-                                <div class="tarjeta ">Curiosidad 3</div>
-                            </div>
-                        </div>
+    <nav class="nav">
+        <div class="logo">
+            <span>🏆</span>
+            <h2>Campeones.</h2>
+        </div>
+        <ul class="menu-lateral">
+            <li>🏀 NBA</li>
+            <li>⚽ Fútbol</li>
+            <li>🏁 Finales</li>
+            <li>📷 Galería</li>
+        </ul>
+    </nav>
+    <main class="father_container">
+
+        <h1>🏀 Galería de Campeones basket</h1>
+        <section class="f_cont">
+            <div class="data1">
+                <div class="tarjeta celt1"><img class="imgb1" src="img/Boston_Celtics.png" alt=""></div>
+            </div>
+            <div class="data2">
+                <div class="sub_data2">
+                    <div class="tarjeta celt2">
+                        <p>🌟 Jugador Estrella del momento: <br><span class="bold">Jayson Tatum.</span></p>
                     </div>
-                    <div class="sub-galeria lakers">
-                        <div class="c_flex cont3">
-                            <div class="tarjeta grande"><img class="imgb1" src="img/lakers.png" alt=""></div>
-                            <div class="tarjeta pequeña">Elemento Secundario</div>
-                        </div>
-                        <div class="c_flex cont4">
-                            <div class="tarjeta pequeña">Curiosidad 1</div>
-                            <div class="tarjeta grande">Curiosidad 2</div>
-                        </div>
-                    </div>
+                    <div class="tarjeta celt3"><img class="imgb2" src="img/jayson.png" alt=""></div>
                 </div>
-                <div class="galeria">
-                    <h1> ⚽ Galería de Campeones futbol</h1>
-                    <div class="sub-galeria psg">
-                        <div class="c_flex cont5">
-                            <div class="tarjeta grande f"><img class="img1" src="img/Psg.png"></div>
-                            <div class="tarjeta pequeña f2">Elemento Secundario</div>
-                        </div>
-                        <div class="c_flex cont6">
-                            <div class="tarjeta pequeña f2">elemento2</div>
-                            <div class="tarjeta grande f"><img class="img2" src="img/Psg campeon.png"></div>
-                        </div>
-                    </div>
-                    <div class="sub-galeria sub4">
-                        <div class="c_flex cont7">
-                            <div class="tarjeta grande f"><img class="img3" src="img/doue.png (2).jpg"></div>
-                        </div>
-                        <div class="c_flex cont8">
-                            <div class="tarjeta pequeña f2">Curiosidad 1</div>
-                            <div class="tarjeta grande f"></div>
-                        </div>
+                <div class="sub_data3">
+                    <div class="tarjeta celt4">
+                        <p>🏀 Boston Celtics es uno de los dos equipo con más campeonatos ganados actualmente, con
+                           17 de estos, además es de los equipos más relevantes de la NBA.</p>
                     </div>
                 </div>
             </div>
-        </main>
-    </div>
+        </section>
+
+        <section class="f_cont cont2">
+            <div class="data3">
+                <div class="tarjeta la1"></div>
+                <div class="tarjeta la2"></div>
+            </div>
+            <div class="data4">
+                <div class="tarjeta la3"></div>
+                <div class="tarjeta la4"></div>
+            </div>
+        </section>
+
+        <section class="f_cont cont3">
+            <div class="data3">
+                <div class="tarjeta PSG1"></div>
+                <div class="tarjeta PSG2"></div>
+            </div>
+            <div class="data4">
+                <div class="tarjeta PSG3"></div>
+                <div class="tarjeta PSG4"></div>
+            </div>
+        </section>
+
+        <section class="f_cont">
+            <div class="data5">
+                <div class="tarjeta FCB1"></div>
+            </div>
+            <div class="data6">
+                <div class="sub_data4">
+                    <div class="tarjeta FCB2"></div>
+                </div>
+                <div class="sub_data5">
+                    <div class="tarjeta FCB3"></div>
+                </div>
+            </div>
+        </section>
+
+    </main>
 </body>
+
 </html>
