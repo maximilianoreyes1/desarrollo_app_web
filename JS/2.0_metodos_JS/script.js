@@ -1,17 +1,27 @@
 
 //ejercicio 1
+const resultado = document.getElementById("resultado");
 function registroCompras(){
-    compras = []
-    compras.push("Pan", "Leche", "Huevos")
-    alert(`Lista de compras: ${compras.join(" - ")}`)
+    let elemento = document.getElementById("lista").value;
+    let item = document.createElement("li");
+    item.innerText = elemento;
+    resultado.appendChild(item);
 }
 
 //ejercicio 2
+const resultado2 = document.getElementById("resultado2");
+function registroCompras2(){
+    let elemento2 = document.getElementById("lista2").value;
+    let item = document.createElement("li");
+    item.innerText = elemento2;
+    resultado.appendChild(item);
+}
+
 function quitarCompras(){
-    compras = []
-    compras.push("Pan", "Leche", "Huevos")
-    compras.pop()
-    alert(`Lista de compras: ${compras.join(" - ")}`)
+    const lista = document.getElementById("resultado");
+    if (lista.lastChild) {
+        lista.removeChild(lista.lastChild);
+    }
 }
 
 //ejercicio 3
