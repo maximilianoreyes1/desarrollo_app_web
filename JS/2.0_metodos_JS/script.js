@@ -14,13 +14,13 @@ function registroCompras2(){
     let elemento2 = document.getElementById("lista2").value;
     let item = document.createElement("li");
     item.innerText = elemento2;
-    resultado.appendChild(item);
+    resultado2.appendChild(item);
 }
 
 function quitarCompras(){
-    const lista = document.getElementById("resultado");
-    if (lista.lastChild) {
-        lista.removeChild(lista.lastChild);
+    const lista2 = document.getElementById("resultado2");
+    if (lista2.lastChild) {
+        lista2.removeChild(lista2.lastChild);
     }
 }
 
