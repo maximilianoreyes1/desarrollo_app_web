@@ -115,6 +115,30 @@ function agregarInicio5() {
     mostrarListaNumeros();
 }
 
+function agregarFin() {
+    const input = document.getElementById("lista5");
+    const valor = input.value.trim();
+    if (valor === "") return;
+    numeros.push(Number(valor));
+    input.value = "";
+    input.focus();
+    mostrarListaNumeros();
+}
+
+function eliminarPrimerElemento2() {
+    if (numeros.length > 0) {
+        numeros.shift();
+    }
+    mostrarListaNumeros();
+}
+
+function eliminarUltimoElemento2() {
+    if (numeros.length > 0) {
+        numeros.pop();
+    }
+    mostrarListaNumeros();
+}
+
 function mostrarListaNumeros() {
     const lista = document.getElementById("resultado5");
     lista.innerHTML = "";
@@ -125,3 +149,6 @@ function mostrarListaNumeros() {
         lista.appendChild(li);
     }
 }
+
+//Ejercicio 6
+let orden = [];
