@@ -36,7 +36,7 @@
                         <h5 class="card-title">🧠 Ejercicio 1: Agregar lista de compras</h5>
                         <input type="text" class="form-control" id="lista">
                         <ul class="card-text" id="resultado"></ul>
-                        <a onclick="agregarElementoCompra()" href="#" class="btn btn-primary">Agregar</a>
+                        <a onclick="agregarElementoCompra()" href="#" class="btn btn-danger">Agregar</a>
                     </div>
                 </div>
                 <div class="card mt-4">
@@ -52,54 +52,43 @@
                         <h5 class="card-title">🧠 Ejercicio 5: Combinación de métodos</h5>
                         <input type="text" class="form-control" id="lista5">
                         <ul class="list-group mb-3" id="resultado5"></ul>
-                        <button onclick="agregarInicio5()" class="btn btn-primary">Inicio</button>
-                        <button onclick="eliminarPrimerElemento2()" class="btn btn-danger">Eliminar inicio</button>
-                        <button onclick="agregarFin()" class="btn btn-primary">Final</button>
-                        <button onclick="eliminarUltimoElemento2()" class="btn btn-danger">Eliminar final</button>
+                        <h6>Números eliminados</h6>
+                        <ul class="list-group mb-3" id="eliminado3"></ul>
+                        <button onclick="agregarFinal()" class="btn btn-primary">Final</button>
+                        <button onclick="eliminarPrimerElemento2()" class="btn btn-danger">Primero</button>
+                        <button onclick="agregarInicio3()" class="btn btn-primary">Inicio</button>
+                        <button onclick="eliminarUltimoElemento2()" class="btn btn-danger">Último</button>
                     </div>
                 </div>
                 <div class="card mt-4">
                     <div class="card-body">
-                        <h5 class="card-title">🧠 Ejercicio 7: Combinación de métodos</h5>
+                        <h5 class="card-title">🧠 Ejercicio 7: Historial de mensajes</h5>
                         <input type="text" class="form-control" id="lista7">
                         <ul class="list-group mb-3" id="resultado7"></ul>
-                        <h6>Números eliminados</h6>
-                        <ul class="list-group mb-3" id="eliminado3"></ul>
-                        <button onclick="agregarInicio2()" class="btn btn-primary">Agregar</button>
-                        <button onclick="eliminarPrimerElemento()" class="btn btn-danger">Eliminar primero</button>
+                        <h6>Mensajes eliminados</h6>
+                        <ul class="list-group mb-3" id="eliminado4"></ul>
+                        <button onclick="agregarFinal2()" class="btn btn-primary">Agregar</button>
+                        <button onclick="eliminarUltimoElemento3()" class="btn btn-danger">Eliminar</button>
                     </div>
                 </div>
                 <div class="card mt-4">
                     <div class="card-body">
-                        <h5 class="card-title">🧠 Ejercicio 9: Combinación de métodos</h5>
+                        <h5 class="card-title">🧠 Ejercicio 9: Reordenar nombres</h5>
                         <input type="text" class="form-control" id="lista9">
                         <ul class="list-group mb-3" id="resultado9"></ul>
-                        <h6>Números eliminados</h6>
-                        <ul class="list-group mb-3" id="eliminado3"></ul>
-                        <button onclick="agregarInicio2()" class="btn btn-primary">Agregar</button>
-                        <button onclick="eliminarPrimerElemento()" class="btn btn-danger">Eliminar primero</button>
+                        <button onclick="agregarInicio4()" class="btn btn-primary">Inicio</button>
+                        <button onclick="agregarFinal4()" class="btn btn-primary">Final</button>
+                        <button onclick="eliminarUltimoElemento4()" class="btn btn-danger">Último</button>
                     </div>
                 </div>
                 <div class="card mt-4">
                     <div class="card-body">
-                        <h5 class="card-title">🧠 Ejercicio 11: Combinación de métodos</h5>
+                        <h5 class="card-title">🧩 Ejercicio 11: Completar la semana laboral</h5>
                         <input type="text" class="form-control" id="lista11">
-                        <ul class="list-group mb-3" id="resultado11"></ul>
-                        <h6>Números eliminados</h6>
-                        <ul class="list-group mb-3" id="eliminado3"></ul>
-                        <button onclick="agregarInicio2()" class="btn btn-primary">Agregar</button>
-                        <button onclick="eliminarPrimerElemento()" class="btn btn-danger">Eliminar primero</button>
-                    </div>
-                </div>
-                <div class="card mt-4">
-                    <div class="card-body">
-                        <h5 class="card-title">🧠 Ejercicio 13: Combinación de métodos</h5>
-                        <input type="text" class="form-control" id="lista13">
-                        <ul class="list-group mb-3" id="resultado13"></ul>
-                        <h6>Números eliminados</h6>
-                        <ul class="list-group mb-3" id="eliminado3"></ul>
-                        <button onclick="agregarInicio2()" class="btn btn-primary">Agregar</button>
-                        <button onclick="eliminarPrimerElemento()" class="btn btn-danger">Eliminar primero</button>
+                        <ul class="list-group list-group-horizontal" id="resultado12"></ul>
+                        <button onclick="eliminarPrimerElemento5()" class="btn btn-danger">Primero</button>
+                        <button onclick="agregarInicio5()" class="btn btn-primary">Inicio</button>
+                        <button onclick="agregarFinal7()" class="btn btn-primary">Final</button>
                     </div>
                 </div>
             </section>
@@ -129,47 +118,50 @@
                         <h5 class="card-title">🧠 Ejercicio 6: Agregar elementos en orden inverso</h5>
                         <input type="text" class="form-control" id="lista6">
                         <ul class="list-group mb-3" id="resultado6"></ul>
-                        <button onclick="agregarInicio2()" class="btn btn-primary">Agregar</button>
-                        <button onclick="eliminarPrimerElemento()" class="btn btn-danger">Eliminar primero</button>
+                        <button onclick="agregarInicio3()" class="btn btn-primary">Agregar al inicio</button>
                     </div>
                 </div>
                 <div class="card mt-4">
                     <div class="card-body">
-                        <h5 class="card-title">🧠 Ejercicio 8: Combinación de métodos</h5>
+                        <h5 class="card-title">🧠 Ejercicio 8: Cola de atención</h5>
                         <input type="text" class="form-control" id="lista8">
                         <ul class="list-group mb-3" id="resultado8"></ul>
-                        <h6>Números eliminados</h6>
-                        <ul class="list-group mb-3" id="eliminado3"></ul>
-                        <button onclick="agregarInicio2()" class="btn btn-primary">Agregar</button>
-                        <button onclick="eliminarPrimerElemento()" class="btn btn-danger">Eliminar primero</button>
+                        <h6>Clientes eliminados</h6>
+                        <ul class="list-group mb-3" id="eliminado5"></ul>
+                        <button onclick="agregarFinal3()" class="btn btn-primary">Agregar</button>
+                        <button onclick="eliminarPrimerElemento3()" class="btn btn-danger">Eliminar</button>
                     </div>
                 </div>
                 <div class="card mt-4">
                     <div class="card-body">
-                        <h5 class="card-title">🧠 Ejercicio 10: Combinación de métodos</h5>
+                        <h5 class="card-title">🧠 Ejercicio 10: Pilas y colas</h5>
                         <input type="text" class="form-control" id="lista10">
                         <ul class="list-group mb-3" id="resultado10"></ul>
-                        <h6>Números eliminados</h6>
-                        <ul class="list-group mb-3" id="eliminado3"></ul>
-                        <button onclick="agregarInicio2()" class="btn btn-primary">Agregar</button>
-                        <button onclick="eliminarPrimerElemento()" class="btn btn-danger">Eliminar primero</button>
+                        <h6>Cargas gastadas</h6>
+                        <ul class="list-group mb-3" id="eliminado6"></ul>
+                        <button onclick="agregarFinal5()" class="btn btn-primary">Final</button>
+                        <button onclick="eliminarUltimoElemento5()" class="btn btn-danger">Último</button>
+                        <input type="text" class="form-control" id="lista10_2">
+                        <ul class="list-group mb-3" id="resultado10_2"></ul>
+                        <h6>Clientes atendidos</h6>
+                        <ul class="list-group mb-3" id="eliminado7"></ul>
+                        <button onclick="agregarFinalColaClientes()" class="btn btn-primary">Final</button>
+                        <button onclick="eliminarPrimerElemento6()" class="btn btn-danger">Primero</button>
                     </div>
                 </div>
                 <div class="card mt-4">
                     <div class="card-body">
-                        <h5 class="card-title">🧠 Ejercicio 12: Combinación de métodos</h5>
+                        <h5 class="card-title">🧩 Ejercicio 12: Registro de personas en una sala</h5>
                         <input type="text" class="form-control" id="lista12">
-                        <ul class="list-group mb-3" id="resultado12"></ul>
-                        <h6>Números eliminados</h6>
-                        <ul class="list-group mb-3" id="eliminado3"></ul>
-                        <button onclick="agregarInicio2()" class="btn btn-primary">Agregar</button>
-                        <button onclick="eliminarPrimerElemento()" class="btn btn-danger">Eliminar primero</button>
+                        <ul class="list-group list-group-horizontal" id="resultado12_1"></ul>
+                        <button onclick="eliminarPrimerElemento12()" class="btn btn-danger">Primero</button>
+                        <button onclick="agregarInicio12()" class="btn btn-primary">Inicio</button>
+                        <button onclick="agregarFinal12()" class="btn btn-primary">Final</button>
+                        <button onclick="eliminarUltimoElemento12()" class="btn btn-danger">Ultimo</button>
                     </div>
                 </div>
             </section>
-
-
-
+            </section>
         </section>
 
     </main>                                                                                                                                                                                                                                    
