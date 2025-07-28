@@ -1,5 +1,5 @@
 function sumarLike1(){
-    let like1 = document.getElementById("like1");
+    let like1 = document.getElementById("like1"); 
     let likeCount1 = parseInt(like1.innerText);
     likeCount1++;
     like1.innerText = likeCount1 + ' like(s)';
