@@ -1,6 +1,4 @@
-/* styles.css */
 
-/* ==== CONTENEDOR PRINCIPAL ==== */
 .father_container {
     border: 2px solid black;
     padding: 10px;
@@ -8,7 +6,6 @@
     font-family: Arial, sans-serif;
 }
 
-/* ==== SECCIÓN SUPERIOR: Usuario + Likes ==== */
 .cont1 {
     display: flex;
     justify-content: space-between;
@@ -16,14 +13,12 @@
     margin-bottom: 10px;
 }
 
-/* ==== BOTÓN Y CONTADOR ==== */
 .sub_cont2 {
     display: flex;
     align-items: center;
     gap: 8px;
 }
 
-/* ==== BOTÓN LIKE ==== */
 .yellow {
     background-color: #fbd85d;
     border: 2px solid black;
@@ -32,7 +27,6 @@
     font-weight: bold;
 }
 
-/* ==== TEXTO DE ABAJO ==== */
 .cont2 p {
     margin: 0;
 }
