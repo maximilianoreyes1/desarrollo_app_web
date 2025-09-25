@@ -152,3 +152,4 @@ function mostrarListaNumeros() {
 
 //Ejercicio 6
 let orden = [];
+
