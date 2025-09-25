@@ -1,0 +1,32 @@
+
+.father_container {
+    border: 2px solid black;
+    padding: 10px;
+    width: 300px;
+    font-family: Arial, sans-serif;
+}
+
+.cont1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.sub_cont2 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.yellow {
+    background-color: #fbd85d;
+    border: 2px solid black;
+    padding: 4px 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.cont2 p {
+    margin: 0;
+}
