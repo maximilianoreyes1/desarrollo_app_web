@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>dojonary</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     
@@ -15,10 +15,10 @@
         <div class="nav">
             <h1>Dojonary</h1>
             <input type="text" placeholder="Search">
-            <button onclick="">Login</button>
+            <button onclick="liked(this)">Login</button>
         </div>
         <div class="main-cont">
-            <div class="column-left">
+            <div class="column-l">
                 <div class="definition-box">
                     <div class="box-header">
                         <h2>ninja</h2>
@@ -28,7 +28,7 @@
                     <div class="box-body">
                         <p>A practitioner skilled in the <a href="#">Japanese</a> art of <a href="#">ninjutsu</a></p>
                     </div>
-                    <button onclick="">13 likes</button>
+                    <button id="likeButton" onclick="sumarLike()">13 likes</button>
                 </div>
                 <div class="definition-box">
                     <div class="box-header">
@@ -39,17 +39,17 @@
                     <div class="box-body">
                         <p>A <a href="#">programmer</a> who breaks down problems with <a href="#">zen</a>-like focus</p>
                     </div>
-                    <button onclick="">37 likes</button>
+                    <button id="likeButton2" onclick="sumarLike2()">37 likes</button>
                 </div>
             </div>
-            <div class="column-right">
+            <div class="column-r">
                 <div class="ad-box">
                     <h3>Dojonary is defined by YOU</h3>
-                    <button onclick="">Add Definition</button>
+                    <button onclick="hide(this)">Add Definition</button>
                 </div>
             </div>
         </div>
     </div>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
