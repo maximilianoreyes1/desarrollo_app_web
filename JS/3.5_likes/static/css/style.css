@@ -49,14 +49,14 @@ body {
     gap: 20px;
 }
 
-.column-left {
+.column-l {
     flex: 2;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.column-right {
+.column-r {
     flex: 1;
 }
 
