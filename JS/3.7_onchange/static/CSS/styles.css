@@ -1,0 +1,140 @@
+/* --- ESTILOS GENERALES Y RESET --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    width: 900px;
+    margin: 0 auto;
+}
+
+/* --- BARRA DE NAVEGACIÓN SUPERIOR --- */
+.banner {
+    background-color: #9FC5F8;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.banner ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.banner a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+/* --- ENCABEZADO DE LA CIUDAD --- */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid black;
+    padding-bottom: 15px;
+    margin: 20px 0;
+}
+
+.header h2 {
+    font-size: 2.5em;
+}
+
+.selector {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* --- CONTENIDO PRINCIPAL (TARJETAS DEL CLIMA) --- */
+.weather-forecast {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.weather-card {
+    flex: 1;
+    background-color: #EEEEEE;
+    padding: 20px;
+    text-align: center;
+}
+
+.weather-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.weather-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 10px 0;
+}
+
+.weather-card > p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.temperatures {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.temp-high {
+    color: #CF2A27;
+}
+
+.temp-low {
+    color: #2B78E4;
+}
+
+/* --- BANNER DE COOKIES --- */
+.cookie-banner {
+    position: fixed;
+    bottom: 20px;
+    width: 860px; /* Ancho ajustado para el padding */
+    background-color: #EEEEEE;
+    border: 2px solid black;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.cookie-banner img {
+    width: 60px;
+    height: 60px;
+}
+
+.cookie-text {
+    flex-grow: 1;
+}
+
+.cookie-text h4 {
+    margin-bottom: 5px;
+}
+
+.cookie-banner button {
+    background-color: #9FC5F8;
+    color: black;
+    border: 2px solid black;
+    padding: 5px 15px;
+    font-weight: bold;
+    box-shadow: 2px 2px black;
+    cursor: pointer;
+}
