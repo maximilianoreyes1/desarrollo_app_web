@@ -14,9 +14,9 @@
         <div class="banner">
             <h1>DojoWeather</h1>
             <ul>
-                <li><a href="#">Burbank</a></li>
-                <li><a href="#">Chicago</a></li>
-                <li><a href="#">Dallas</a></li>
+                <li><a href="#" onclick="cityAlert()">Burbank</a></li>
+                <li><a href="#" onclick="cityAlert()">Chicago</a></li>
+                <li><a href="#" onclick="cityAlert()">Dallas</a></li>
             </ul>
         </div>
 
@@ -24,7 +24,7 @@
             <h2>San Jose</h2>
             <div class="selector">
                 <p>show temperature in:</p>
-                <select name="mySelect" id="mySelect">
+                <select name="mySelect" id="mySelect" onchange="convertTemps(this)">
                     <option value="celsius">°C</option>
                     <option value="fahrenheit">°F</option>
                 </select>
@@ -76,11 +76,12 @@
                 <h4>Stop! Cookie time</h4>
                 <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic. <a href="#">Read more...</a></p>
             </div>
-            <button>I Accept</button>
+            <button onclick="hideCookieBanner(this)">I Accept</button>
         </div>
 
     </div>
 
+    <script src="JS/script.js"></script>
 </body>
 
 </html>
